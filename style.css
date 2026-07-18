@@ -527,6 +527,74 @@ body::before {
 }
 .edu-card p { color:var(--muted); font-size:14px; }
 
+/* ─── EXPERIENCE ─── */
+.experience-card {
+  background:var(--card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border:1px solid var(--border);
+  border-left:3px solid var(--green);
+  border-radius:10px;
+  padding:24px 28px;
+  transition:border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.experience-card:hover {
+  border-color:var(--green);
+  border-left-color:var(--green);
+  transform:translateX(4px);
+  box-shadow: 0 8px 30px rgba(46, 204, 113, 0.06);
+}
+
+.experience-card h3 {
+  font-family:'Space Grotesk',sans-serif;
+  font-size:18px;
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:4px;
+  letter-spacing:-0.3px;
+}
+
+.experience-card h4 {
+  font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:14px;
+  font-weight:600;
+  color:var(--muted);
+  margin-bottom:8px;
+}
+
+.experience-card .duration {
+  font-size:13px;
+  font-weight:700;
+  color:var(--green);
+  margin-bottom:14px;
+  display:block;
+  letter-spacing:0.3px;
+}
+
+.experience-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.experience-card li {
+  color:var(--muted);
+  font-size:14.5px;
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.experience-card li::before {
+  content: "•";
+  color: var(--green);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 /* ─── CONTACT ─── */
 .contact-wrapper {
   background:var(--card);
